@@ -70,6 +70,12 @@
     display: flex;
     justify-content: center;
 
+
+    @media @phone{
+      flex-direction: column-reverse;      
+      }
+  
+
     .walk-text {
       width: 50%;
 
@@ -84,11 +90,20 @@
       .btn{
         .custom-btn(@ebony-clay, @width, white)
       }
+
+      @media @phone{        
+          width: 100%;
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{        
+        width: 100%;
+        margin-left: 0%;
+    }
       
       img {
         width: 100%;

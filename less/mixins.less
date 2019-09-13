@@ -6,9 +6,8 @@
     width: @width;
     height: 45px;
     font-size: 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     color:white;
-    // text-align: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -17,5 +16,9 @@
     &:hover{
       background-color:@sea-shell;
       color:@ebony-clay;
+    }
+
+    @media @phone{        
+      width: 100%;
     }
 }
