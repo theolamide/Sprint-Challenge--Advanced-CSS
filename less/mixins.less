@@ -1,1 +1,24 @@
 // Mixins Here
+.custom-btn(@ebony-clay, @width, white){
+    display: block;
+    background-color: @ebony-clay;    
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    &:hover{
+      background-color:@sea-shell;
+      color:@ebony-clay;
+    }
+
+    @media @phone{        
+      width: 100%;
+    }
+}
